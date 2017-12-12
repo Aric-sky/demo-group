@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>slider-test</title>
+	<link rel="stylesheet" href="styles/lrtk.css" />
+	<script src="scripts/all.js"></script>
+</head>
+<body>
+	
+img:
+<div id="animation-effect" class="iSlider-effect"></div>
+
+
+
+<script>
+	var data = [{
+	    height: 475,//100%
+	    width: 400,//100%
+	    content: "images/1.jpg",//<div>11</div>
+	},{
+	    height: 527,
+	    width: 400,
+	    content: "images/2.jpg",
+	},{
+	    height: 400,
+	    width: 512,
+	    content: "images/3.jpg",
+	}];
+
+  var iSlider = new iSlider({
+  	  data : data,
+      dom : document.getElementById('animation-effect'),
+      animateType: 'depth',//轮播方式: default, rotate, flip ,depth
+      isAutoplay: true,
+      isLooping: true,
+      duration:1000
+      //type:'dom'
+  });
+	iSlider.bindMouse();
+	console.log(iSlider);
+
+</script>
+
+
+</body>
+</html>
