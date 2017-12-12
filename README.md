@@ -1,3 +1,5 @@
-1. npm install
-2. gulp
-use for conventional copy
+### 1. npm install
+### 2. gulp
+
+---
+- a simple gulp project demo.
