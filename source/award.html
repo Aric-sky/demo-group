@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta charset="UTF-8">
+	<title>我的奖品</title>
+	<link rel="stylesheet" type="text/css" href="css/award.min.css" data-inline>
+    <script src="//g.alicdn.com/mtb/lib-flexible/0.3.2/flexible.js">
+   		/* 页面采用rem单位 750分辨率标准  1rem = 37.5px */
+	</script>
+  	<!-- <script src="//g.alicdn.com/heyi_h5/onehd/0.1.3/libs/zepto.min.js"></script> -->
+	<script src="//g.alicdn.com/heyi_h5/onehd/0.1.0/libs/jquery-3.2.1.min.js"></script>
+  	<script src="//g.alicdn.com/mtb/lib-promise/3.1.1/polyfillB.js"></script>
+    <script src="//g.alicdn.com/mtb/lib-windvane/2.1.8/windvane.js"></script>
+	<script src="//g.alicdn.com/heyi_h5/onehd/0.1.0/libs/mtop.min.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<a href="//hudong.vip.youku.com/act/mili/index.html?isWindVane=1" class="enter"></a>
+		<div class="main">
+			<div class="container" id="container" style="display: block;">
+				<div class="tab">
+					<i></i>
+				</div>
+				<div class="award-container">
+					<div class="award-head">
+						<div>
+							<span>奖品</span>
+							<ul class="drop">
+								<li>
+									<span>全部奖品</span>
+									<i class="more-icon"></i>
+								</li>
+								<li>
+									<span>军事联盟集卡</span>
+								</li>
+								<li>
+									<span>剑雨红包</span>
+								</li>
+								<li>
+									<span>绿茶</span>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<span>时间</span>
+						</div>
+						<div>
+							<span>状态</span>
+						</div>
+					</div>
+					<div class="award-content" id="scroll">
+						<!-- <div class="scrollbar">
+		                    <div class="place"></div>
+		                </div> -->
+						<div class="award-lists">
+						</div>
+						<div class="dropload-down">
+							<div class="dropload-refresh">
+								↑上拉加载更多
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hd-tips">
+			</div>
+			<div class="bottom" style="display:block"></div>
+		</div>
+		<div class="mask" style="display: none;">
+			<div class="toast">
+	            <div class="toast-content"></div>
+	            <div class="clz"></div>
+			</div>
+			<!-- 第三方券 -->
+	        <div class="toast" id="toast" style="display: none;">
+	            <div class="toast-content">
+	        		<span class="txt desc">
+		        		<em class="title"></em>
+	        		</span>
+	        		<span class="txt key">
+	        			<em class="title"></em>
+	        		</span>
+	        		<span class="note">
+	        			<em class="active" style="margin-left: 0"></em>
+	    			</span>
+    			</div>
+	            <div class="clz"></div>
+	        </div>
+	    </div>
+	    	
+	</div>
+	
+	<script type="text/javascript">
+		var globalConfig = {
+			hdDesc: '红包提现截止日期7月31日，优惠券领取有效期截止8月15日，请在有效期前提现或使用，若有疑问请与客服联系。',
+			hdItem: [{
+				hdName: 'card',
+				hdUrl: '//hudong.vip.youku.com/act/mili/index.html?isWindVane=1',
+				hdImg: '//img.alicdn.com/tfs/TB1Wbd9RFXXXXbEapXXXXXXXXXX-749-1204.jpg',
+				className: 'card-wrap'
+			}],
+			alipayRegUrl: 'https://render.alipay.com/p/s/i',
+			onRegAlipay: true
+
+		};
+		function awardInfo(data){
+			globalConfig = data;
+		}
+	</script>
+	<script src="//huodong.m.taobao.com/api/data/v2/cf81ffb4c80a4c829391f9f2fbfd24e8.js"></script>
+	<script data-inline src="js/award.min.js"></script>
+	<script async src="//g.alicdn.com/alilog/mlog/aplus_o.js"></script>
+</body>
+</html>
